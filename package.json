@@ -4,7 +4,7 @@
   "description": "CORS proxy",
   "scripts": {
     "deploy-dev": "sls --stage dev deploy",
-    "offline-dev": "sls --stage dev offline"
+    "offline-dev": "sls --stage dev offline --httpPort 9090"
   },
   "dependencies": {
     "node-fetch": "^2.6.1",
