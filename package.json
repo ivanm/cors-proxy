@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "CORS proxy",
   "scripts": {
-    "deploy": "node_modules/.bin/serverless deploy",
-    "offline": "node_modules/.bin/serverless offline"
+    "deploy-dev": "sls --stage dev deploy",
+    "offline-dev": "sls --stage dev offline"
   },
   "dependencies": {
     "node-fetch": "^2.6.1",
