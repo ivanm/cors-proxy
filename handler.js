@@ -49,7 +49,7 @@ module.exports.corsProxy = async (event) => {
       let proxyResponse = {
         statusCode: res.status,
         headers: {
-          'Access-Control-Allow-Origin': 'https://nft-explorer.vaan.dev', // Required for CORS support to work
+          'Access-Control-Allow-Origin': '*', // Required for CORS support to work
           'Access-Control-Allow-Credentials': true, // Required for cookies, authorization headers with HTTPS
           'content-type': res.headers['content-type'],
         },
